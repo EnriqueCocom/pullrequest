@@ -1,0 +1,133 @@
+:root{
+  --blanco: #ffffff;
+  --negro: #000000;
+  --gris: #e6e6e6;
+  --azul: #28567a;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+header{
+  background-color: var(--gris);
+}
+.contenedor_logo{
+  /* border: 1px blue solid; */
+  max-width: 280px;
+  padding: 20px 10px;
+  margin: auto;
+}
+.contenedor_logo figure img{
+  width: 100%;
+}
+/* Código iconomenu*/
+.contenedor_menu{
+  display: none;
+  padding: 10px 20px;
+}
+#iconomenu{
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: var(--blanco);
+  background-color: var(--azul);
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 40px;
+}
+
+
+/* Código nav */
+.cont_menu{
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+  list-style: none;
+  flex-wrap: wrap;
+
+}
+.cont_menu li a{
+  text-decoration: none;
+  color: var(--azul);
+  background-color: transparent;
+  border: 2px solid var(--azul);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.cont_menu li a:hover{
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+
+/* Código contenido */
+.contenedor_texto{
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px var(--azul) solid;
+}
+
+.caja_texto{
+  width: 48%;
+}
+.caja_texto h1{
+  font-size: 25px;
+  color: #cc9000;
+  padding: 15px 0px;
+  font-family: 'Arimo';
+}
+.caja_texto h3{
+  padding-bottom: 20px;
+}
+
+.caja_texto a{
+  background-color: #800000;
+  color: var(--blanco);
+  padding: 10px 30px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.5s ease;
+}
+.caja_texto a:hover{
+  background-color: #cc9900;
+}
+
+.caja_imagen {
+  width: 48%;
+}
+.caja_imagen figure img{
+  width: 100%;
+  display: none;
+}
+
+footer{
+  background-color: var(--azul);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer a{
+  color: var(--blanco);
+  text-decoration: none;
+  padding: 35px 10px;
+}

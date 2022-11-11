@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página web responsive.">
+  <title>Página Pullrequest</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/movil.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet">
+  <script src='https://kit.fontawesome.com/5f3c62802e.js' crossorigin='anonymous'></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"> </script>
+</head>
+<body>
+  <header class="ancho">
+    <div class="contenedor_logo">
+      <figure>
+        <img src="imagenes/pullrequest-logo.svg" alt="">
+      </figure>
+    </div>
+  </header>
+
+  <div class="contenedor_menu ancho">
+    <a href="#" id="iconomenu">
+       <i class='fas fa-bars fa-1x'> </i>
+    </a>
+  </div>
+  <nav class='ancho' id="caja_menu">
+    <ul class="cont_menu">
+      <li><a href='#'>Inicio</a></li>
+      <li><a href='#'>Empresa</a></li>
+      <li><a href='#'>Servicios</a></li>
+      <li><a href='#'>Ubicación</a></li>
+      <li><a href='#'>Contacto</a></li>
+    </ul>
+  </nav>
+  <section class="ancho contenedor_texto">
+    <article class="caja_texto">
+      <h1>Creación de páginas web</h1>
+      <h3>Curso básico de HTML5 y CSS3</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa aut, maiores cum sequi, aperiam distinctio suscipit esse odit ea assumenda fugiat asperiores.</p>
+      <br>
+      <a href="#" id="btn_leer">Leer mas</a>
+    </article>
+
+    <div class="caja_imagen">
+      <figure>
+        <img id="slidefoto" src="imagenes/foto_pullrequest.svg" alt="Foto aleatoria">
+      </figure>
+    </div>
+  </section>
+
+  <footer class="ancho">
+    <a href="#">@enriquecocom</a>
+  </footer>
+
+  <script>
+
+    $("#iconomenu").click(function () {
+      $("nav").slideToggle();
+    });
+
+    $("#btn_leer").click(function () {
+      $("#slidefoto").toggle("fade");
+    })
+
+  </script>
+
+</body>
+</html>
